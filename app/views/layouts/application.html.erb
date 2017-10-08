@@ -11,7 +11,9 @@
   </head>
 
   <body <%= class_and_methods %>>
-    <%= render "pages/sections/nav" %>
+    <%= render "layouts/nav" %>
     <%= yield %>
+    <%= render "layouts/footer" %>
+    <%= render "layouts/modals" %>
   </body>
 </html>

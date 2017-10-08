@@ -1,0 +1,28 @@
+<footer>
+  <div class="ui equal width grid">
+    <div class="column address">
+      <h3>Impretintas Pereira</h3>
+      <div class="description">
+        <p>Cra. 3 No. 23-14</p>
+        <p>Pereira, Risaralda, Colombia</p>
+        <p>Cel. 310 469 4750</p>
+        <p>Tel. (6)333 88 28 - (6)333 87 98 - (6)344 86 08</p>
+      </div>      
+    </div>
+    <div class="column">
+      <h3 class="ui inverted header">Productos</h3>
+      <div class="ui inverted link list">
+        <% 4.times do | bla | %>
+          <%= link_to "Producto_#{bla}", "#", class: "item" %>
+        <% end %>        
+      </div>
+    </div>
+    <div class="column legend">
+      <h3 class="ui inverted teal header">Experiencia de 16 años</h3>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      </p>
+      <%= link_to "Contáctenos", "#", remote: true, class: "ui large teal button" %>
+    </div>    
+  </div>
+</footer>
