@@ -14,13 +14,19 @@
 //= require rails-ujs
 //= require turbolinks
 //= require semantic-ui
+//= require underscore
+//= require gmaps/google
 //= require_tree .
 
 $(document).on("turbolinks:load", function(){
   
-  $('a#contact').click(function(e){
-    e.preventDefault();    
-    $('#general-modal').modal('show');
-  });
+  map();
 
 });
+
+function map(){
+  $('a#map').click(function(e){
+    e.preventDefault();    
+    $('#map-modal').modal('show');
+  });  
+}

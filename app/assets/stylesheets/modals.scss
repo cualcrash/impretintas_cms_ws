@@ -10,3 +10,13 @@
     text-align: center;
   }
 }
+
+#map-modal{
+  .content{
+    height: 40rem;
+    padding: 0rem;
+    #map{
+      height: 100%;
+    }
+  }
+}
