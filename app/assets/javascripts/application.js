@@ -19,7 +19,7 @@
 $(document).on("turbolinks:load", function(){
   
   $('a#contact').click(function(e){
-    e.preventDefault();
+    e.preventDefault();    
     $('#general-modal').modal('show');
   });
 

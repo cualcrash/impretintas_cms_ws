@@ -1,0 +1,31 @@
+<p>
+  Estamos felices que podamos contactarnos lo antes posible para atender su solicitud. Es necesario llenar los siguientes campos para poder seguir con el proceso.
+</p>
+
+<%= form_tag contact_email_path, class: "ui form", remote: true do %>
+  <div class="fields">
+    <div class="six wide field">
+      <%= label_tag "Nombre" %>
+      <%= text_field_tag "contact[fullname]", nil, placeholder: "Nombre", required: true %>
+    </div>
+    <div class="four wide field">
+      <%= label_tag "Teléfono" %>
+      <%= text_field_tag "contact[telephone]", nil, placeholder: "Teléfono", required: true %>
+    </div>
+    <div class="six wide field">
+      <%= label_tag "Correo Electrónico" %>
+      <%= email_field_tag "contact[email]", nil, placeholder: "Correo Electrónico", required: true %>
+    </div>
+  </div>
+  <div class="fields">
+    <div class="sixteen wide field">
+      <%= label_tag "Mensaje" %>
+      <%= text_area_tag "contact[message]", nil, placeholder: "Mensaje", required: true, rows: 6 %>
+    </div>
+  </div>
+
+  <%= button_tag data: { disable_with: "ENVIANDO..." }, type: 'submit', class:"ui green button" do %>
+    <%= raw("<span>ENVIAR</span>") %>
+  <% end %>
+
+<% end %>

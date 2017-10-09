@@ -1,7 +1,13 @@
 class PagesController < ApplicationController
 
   def home
-    #raise "home".inspect
+  end
+
+  def contact_modal
+  end
+
+  def contact_email
+    raise params.inspect
   end
 
 end
